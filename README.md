@@ -1,27 +1,10 @@
 # AffirmInputs
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+This was generated with the latest versions of Angular CLI and Angular Material.  If the Angular CLI is downloaded, then all one has to do is pull this repository, run `npm install`, and then run `ng serve`.
 
-## Development server
+## Question Answers
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. I spent the 2.5 hours actually developing the code and about 20 minutes thinking about framework choice and how I was going to try to potentially improve upon the design.
+2. I decided to go with Angular Material for styling and ease of customer use.  The validations are clear and the inputs and date picker are clean and easily understandable.  I went for minimum "clicks" for the user while still maintaining usability and functionality.
+3. The API submission would probably be a POST to an endpoint something like `/payment` with a body like `{payment:{name: string, cardNumber: integer, cvv2: integer, expirationDate: datetime}}`.  Validation errors that come back from the API would probably best be displayed in a human-readable way in a red banner above the form.
+4. I think that the design focus for these kinds of forms is to minimize time spent inputting the data.  As an example, I went with the date picker rather than separate text or dropdowns for the month expiration date and the year expiration date.  Ultimately, we want the customer to spend as little time in checkout as possible so that they can keep shopping and so that they don't think of their checkout experience as a hindrance to using our product.
